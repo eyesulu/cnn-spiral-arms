@@ -381,7 +381,7 @@ def plot_histogram(confidences, fontsize = 19):
     """
 
     font = {'fontname':'Times New Roman'}
-    plt.rcParams.update({'font.size': 19})
+    plt.rcParams.update({'font.size': fontsize})
     plt.figure(figsize=(10, 5))
     plt.hist(confidences, bins = 15,range=[50, 100], color = 'black', histtype='barstacked', rwidth=0.8 )
     plt.gca().yaxis.set_major_locator(MaxNLocator(integer=True))
